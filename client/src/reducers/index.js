@@ -21,12 +21,6 @@ function rootReducer(state = initialState, { type, payload }) {
         pokemons: payload,
       };
 
-    case "GET_TYPES":
-      return {
-        ...state,
-        types: payload,
-      };
-
     case "FILTER_TYPES":
       const all2 = state.pokes;
       const fil = all2.filter((t) =>

@@ -11,17 +11,7 @@ export function getPokemons() {
       });
   };
 }
-export function getTypes() {
-  return async (dispatch) => {
-    try {
-      const result = await axios.get("/types");
-      const r = await result.data;
-      return dispatch({ type: "GET_TYPES", payload: r });
-    } catch (err) {
-      return err;
-    }
-  };
-}
+
 export function postPokemon(payload) {
   return async (dispatch) => {
     try {
