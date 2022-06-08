@@ -12,7 +12,6 @@ const Message = ({ msg, bgColor }) => {
 
   return (
     <div style={styles}>
-      {/* <p>{msg}</p> */}
       <p dangerouslySetInnerHTML={{ __html: msg }} />
     </div>
   );

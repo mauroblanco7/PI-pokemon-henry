@@ -1,6 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { postPokemon } from "../actions/index.js";
 
 export const useForm = (initialForm, validateForm) => {

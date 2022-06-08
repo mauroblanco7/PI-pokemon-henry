@@ -8,10 +8,8 @@ router.get("/", async (req, res) => {
   const { name } = req.query;
   try {
     if (name) {
-      console.log("hola route");
       const n = name.toLowerCase();
       const byName = await getByName(n);
-      console.log("hola route 2");
       res.json([byName]);
     } else {
       const allPoke = await getAll();

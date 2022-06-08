@@ -3,9 +3,12 @@ const getAllTypes = require("../../controllers/types/all.js");
 const router = Router();
 
 router.get("/", async (req, res) => {
-  const allTypes = await getAllTypes();
-  //console.log(allTypes);
-  res.send(allTypes);
+  try {
+    const allTypes = await getAllTypes();
+    res.send(allTypes);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 module.exports = router;
