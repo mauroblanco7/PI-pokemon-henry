@@ -1,0 +1,102 @@
+
+.pagina {
+    background-color: rgb(13, 12, 12);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    width: 98.5%;
+    margin-left: 0;
+    
+}
+.select select {
+    width: 100px;
+    background-color: rgb(222, 219, 216);
+    border-style: none;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.filters p {
+    color: rgb(222, 219, 216);
+    font-size: 20px;
+}
+
+.filter-container {
+   
+    width: 350px;
+    height: 90vh;
+    border-right: 1.5px solid rgb(44, 39, 39);
+    
+}
+.link{
+    text-decoration: none;
+}
+.filters{
+   
+   
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  
+}
+.filter p {
+    color: black;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(13, 12, 12);
+
+    
+}
+
+.loader-main{
+  
+    padding-top: 200px;
+    margin-top: 50px;
+    margin-left: 450px;
+}
+.pag{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.uld {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    
+  
+}
+.div-not-found {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 350px;
+    margin-top: 150px;
+    width: 300px;
+    background-color: #ef233bf8;
+    border-radius: 5px;
+    padding: 6px;
+    
+}
+.div-not-found h4{
+    color: antiquewhite;
+    font-size: 20px;
+    
+}
+.div-not-found h5{
+    color: antiquewhite;
+    font-size: 16px;
+}
