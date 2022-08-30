@@ -39,7 +39,7 @@ function toValidateName(name) {
     }
     return (
       <div>
-        <div input-group>
+        <div>
           <input
             className="input"
             type="text"

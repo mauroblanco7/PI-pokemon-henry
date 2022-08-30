@@ -15,7 +15,7 @@ export const useForm = (initialForm, validateForm) => {
 
     setForm({
       ...form,
-      [name]: e.target.value,
+      [name]: value,
     });
   };
 

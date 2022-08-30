@@ -31,7 +31,7 @@ const getByName = async (name) => {
       return pokeName;
     }
   } catch (error) {
-    console.log(error);
+    console.log("hola3" + error);
     return { msg: "No se encontro" };
   }
 };

@@ -4,6 +4,7 @@ const onlyAllTypes = require("./allApi.js");
 const saveAllTypes = async () => {
   try {
     const types = await onlyAllTypes();
+    console.log(types);
     types.forEach((type) => {
       Type.findOrCreate({ where: { name: type } });
     });

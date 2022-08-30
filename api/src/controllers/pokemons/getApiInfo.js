@@ -21,7 +21,7 @@ const getInfo = async () => {
     }
     return allPokemons;
   } catch (error) {
-    console.log(error);
+    console.log("hola2" + error);
   }
 };
 module.exports = getInfo;

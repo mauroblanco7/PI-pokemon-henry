@@ -43,7 +43,9 @@ router.post("/", async (req, res) => {
           itsCreated,
         });
         let typeofPokemon = await Type.findAll({ where: { name: type } });
+        console.log(typeofPokemon);
         createPokemon.addType(typeofPokemon);
+        console.log(createPokemon);
         res.send("El pokemon fue creado con exito");
       } else {
         res
